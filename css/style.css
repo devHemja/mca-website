@@ -1,0 +1,23 @@
+
+body{
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flex-container {
+  display: flex;
+}
+
+

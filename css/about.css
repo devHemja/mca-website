@@ -1,0 +1,13 @@
+.heading_title{
+    text-decoration: 5px underline;
+    text-decoration-color: #fca311;
+    text-underline-offset: 0.3rem;
+}
+
+.aboutBanner{
+    height: 60vh;
+}
+.aboutBanner>img{
+    width: 100%;
+    height: 60vh;
+}
