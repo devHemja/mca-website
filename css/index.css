@@ -174,3 +174,43 @@ small{
     background-color: black;
     color: white;
 }
+
+
+
+/* hovers */
+
+.card_btn:hover{
+    background-color: #333333;
+    box-shadow: 5px 5px 10px #525252;
+    transition-duration: 0.2s;
+}
+
+.unavailable_btn:hover{
+    animation: unavailable_btn_shake 0.40s infinite ;
+}
+
+@keyframes unavailable_btn_shake {
+    0% {
+        transform: skewY(-5deg);
+    }
+
+    20% {
+        transform: skewY(5deg);
+    }
+
+    40% {
+        transform: skewY(-5deg);
+    }
+
+    60% {
+        transform: skewY(5deg);
+    }
+
+    80% {
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
