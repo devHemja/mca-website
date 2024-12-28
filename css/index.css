@@ -6,7 +6,7 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 3rem;
+    padding: 0rem 3rem;
     align-items: center;
     color: white;
     background-color: black;
@@ -43,7 +43,8 @@
 
 
 .unavailable_data{
-    font-size: small;
+    font-size: xx-small;
+
 }
 /* search bar */
 
@@ -154,7 +155,6 @@ small{
 .card_btn{
     display: block;
     text-decoration: none;
-    font-size: small;
     color: white;
     background-color: black;
     width: fit-content;
@@ -172,4 +172,53 @@ small{
     padding: 1rem;
     background-color: black;
     color: white;
+}
+
+
+
+/* hovers */
+
+.card_btn:hover{
+    background-color: #333333;
+    box-shadow: 5px 5px 10px #525252;
+    transition-duration: 0.2s;
+}
+
+.unavailable_btn:hover{
+    animation: unavailable_btn_shake 0.40s infinite ;
+}
+
+@keyframes unavailable_btn_shake {
+    0% {
+        transform: skewY(-5deg);
+    }
+
+    20% {
+        transform: skewY(5deg);
+    }
+
+    40% {
+        transform: skewY(-5deg);
+    }
+
+    60% {
+        transform: skewY(5deg);
+    }
+
+    80% {
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .main_container{
+        padding: 1.3rem;
+    }
+    .card_area{
+        gap: 1.4rem;
+    }
 }
